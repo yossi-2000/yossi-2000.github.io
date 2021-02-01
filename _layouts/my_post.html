@@ -1,0 +1,13 @@
+---
+layout: post
+title: {{ page.title }}
+---
+<nav id="tags">
+  <h6>tags:</h6>
+  <small>
+    {% for tag in page.tags %}
+    <a href="/tags.html#tag_{{ tag }}">{{ tag }}</a> 
+	{% endfor %}
+  </small>
+</nav>
+{{ content }}
